@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-app';
+
+  count: number = 0;
+  onClick() {
+    this.count++;
+  }
+
+  MyHiddenVar: boolean = true;
+
+  OnDoubleClick() {
+    if (this.MyHiddenVar === false) {
+      this.MyHiddenVar = true;
+    }
+    else {
+      this.MyHiddenVar = false;
+    }
+  }
+
 }
+
+
